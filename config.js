@@ -13,10 +13,10 @@ const siteConfig = {
 const users = [
   {
     id: 0, // default author
-    username: "sugyeong",
+    username: "sukyeong",
     company: "weniv",
     position: "CEO",
-    img: "img/user/profile-sugyeong",
+    img: "img/user/profile-sukyeong",
   },
 ];
 
