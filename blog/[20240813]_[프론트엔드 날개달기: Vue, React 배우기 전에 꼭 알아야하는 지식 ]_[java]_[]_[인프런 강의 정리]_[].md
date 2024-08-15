@@ -27,3 +27,33 @@
 * 예: navigator.geolocation.getCurrentPosition(function (pos) { var crd = pos.cords; console.log(${crd.latitude});}), navigator.appName, navigator.appVersion, navigator.userAgent
 * 자세한 기능: location.mdnb 검색 후 사이트 참고
 
+# script 태그 defer, async
+
+
+# this란 무엇인가?
+
+
+# API란 무엇인가?
+
+
+# 동기와 비동기란?
+
+
+# 프론트엔드&백엔드란?
+
+
+
+# 이벤트 전파, 버블링&캡쳐링
+
+
+# 자바스크립트 유용한 Array APIs
+
+
+# JavaScript 모듈 시스템
+
+
+# NPM 기초 강좌
+
+
+# Webpack 기초 강좌 
+
