@@ -1,2 +1,2 @@
-## 프로젝트 소개
+## 웹사이트
 - https://sukyeong2002.github.io/github_blog/
