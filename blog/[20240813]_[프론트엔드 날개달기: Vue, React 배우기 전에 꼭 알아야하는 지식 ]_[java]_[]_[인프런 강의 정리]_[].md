@@ -28,7 +28,7 @@
 * 자세한 기능: location.mdnb 검색 후 사이트 참고
 
 # script 태그 defer, async
-* 주의: 퍼상 전 script 만나는 경우 에러 발생
+* 주의: 파싱 전 script 만나는 경우 에러 발생
 * 자바그스크립트 효과적으로 가져오는 법: body 최하단에서 script 로드, load 이벤트 리스너 등록(window.onload, DOMContentLoaded) 
 * window.onload: HTML 파싱 DOM 생성 그리고 외부 콘텐츠 로드 후 발생 (콘텐츠가 많을 시 비효율적)
 * DOMContentLoaded: HTML 파싱 DOM 생성 후 발생 (콘텐츠가 많을 시 효율적)
