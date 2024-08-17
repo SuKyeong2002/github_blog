@@ -36,7 +36,7 @@
 * ㄴ 즉, HTML 파싱 완료된 후 javascript 코드 실행
 * async 속성: HTML 파싱과 함께 비동기로 javascript 파일 불러옴 (꼭 필요 시)
 * ㄴ 즉, HTML 파싱 완료 X 시에도 먼저 로딩되는 javascript 코드부터 실행
-* ㄴ javascript 파일 실행 시 HTML 파싱 중단
+* ㄴ 즉, javascript 파일 실행 시 HTML 파싱 중단
 
 # this란 무엇인가?
 
