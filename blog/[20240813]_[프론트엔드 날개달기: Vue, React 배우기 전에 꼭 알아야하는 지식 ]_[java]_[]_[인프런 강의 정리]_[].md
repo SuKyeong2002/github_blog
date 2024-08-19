@@ -108,6 +108,12 @@ printThis1()' // {name: '홍길동'} 출력
 
 
 # 이벤트 전파, 버블링&캡쳐링
+* 캡쳐링(capturing): body(최상위) -> main -> div -> p -> span(최하위)
+* ㄴ 예: Event.eventPhase()
+* ㄴ 이벤트 전파 막기: Event.stopPropagation()
+* 버블링(bubbling): span(최하위) -> p -> div -> main -> body(최상위)
+* ㄴ 예: Event.addEventListener()
+* ㄴ 이벤트 전파 막기: Event.stopPropagation()/ Event.preventDefault()
 
 
 # 자바스크립트 유용한 Array APIs
