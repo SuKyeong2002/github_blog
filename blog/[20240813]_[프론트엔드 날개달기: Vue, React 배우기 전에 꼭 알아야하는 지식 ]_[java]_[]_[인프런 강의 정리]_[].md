@@ -52,7 +52,7 @@ let person1 = {
 };
 let peintThis1 = printThis.bind(person1);
 printThis1()' // {name: '홍길동'} 출력
-let person2 = {
+* let person2 = {
     name: '김길동',
 };
 let peintThis1 = printThis.bind(person2);
