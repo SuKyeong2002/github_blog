@@ -39,6 +39,11 @@
 * ㄴ 즉, javascript 파일 실행 시 HTML 파싱 중단
 
 # this란 무엇인가?
+* this: 객체 (= 호출하는 놈)
+* this의 기본값: window 객체
+* 예: person.printThis; console.log("this === person", this === person); console.log("this === window", this === window); 시 true false 출력
+* 예: printThis; console.log("this === person", this === person); console.log("this === window", this === window); 시 false true 출력 
+
 
 
 # API란 무엇인가?
