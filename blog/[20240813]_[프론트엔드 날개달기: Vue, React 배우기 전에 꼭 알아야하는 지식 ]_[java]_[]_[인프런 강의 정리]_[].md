@@ -117,6 +117,57 @@ printThis1()' // {name: '홍길동'} 출력
 
 
 # 자바스크립트 유용한 Array APIs
+* map(): 배열 내의 모든 요소에 대하여 주어진 함수를 호출한 결과를 모아서 새로운 배열을 반환
+* ㄴ 배열 예: const numbers = [1, 2, 3, 4, 5, 6, 7]; 
+const result= numbers.map(function (number) {
+    return number * 2;
+});
+console.log(result); // {2, 4, 6, 8, 10, 12, 14} 출력
+* ㄴ 단순화: const numbers = [1, 2, 3, 4, 5, 6, 7]; 
+const result= numbers.map((number) => number * 2;);
+console.log(result); // {2, 4, 6, 8, 10, 12, 14} 출력
+* 객체 예: class Student (
+    constructor(name, koreanLanguage, english, mathmatics) {
+        this.name = name;
+        this.koreanLanguage = koreanLanguage;
+        this.english = english;
+        this.mathmatics = mathmatics;
+    }
+)
+const student1 = new Student("홍길동", 95, 87, 75);
+const student2 = new Student("김길동", 67, 80, 100);
+const student3 = new Student("고길동", 89, 75, 80);
+const student4 = new Student("최길동", 48, 52, 98);
+const students = [student1, student2, student3, student4];
+console.log("이름", student.map((student)=>student.name)); // ['홍길동', '김길동', '고길동', '최길동'] 출력
+* some(): 배열 안의 어떤 요소라도 주어진 판별 함수 통과하는지  참/거짓 테스트
+* ㄴ 예: const fluits = ["사과", "딸기", "배", "참외", "딸기", "수박"];
+const result = fluits.some((fluit)=>fluit==="수박");
+console.log(result); // true 출력
+* ㄴ 인덱스도 가져올 경우: fluits.some(fluit, index)
+* every(): 배열 안의 모든 요고사 주어진 판별 함수 통과하는지 참/거짓 테스트
+* ㄴ 예: const fluits = ["사과", "딸기", "배", "참외", "딸기", "수박"];
+const result = fluits.every((fluit)=>fluit==="수박");
+console.log(result); // false 출력
+* filter(): 주어진 함수의 테스트를 통과하는 모든 요소를 모아 새로운 배열로 반환
+* ㄴ 예: const numbers = [1, 2, 3, 4, 5, 6, 7];
+const result = numbers.filter((number)=>number%2===0);
+console.log(result); // [2, 4, 6] 출력
+* reduce(): 배열의 각 요소에 대하여 주어진 리듀서 함수 실행 후 하나의 결과값 반환
+* ㄴ 리듀서 함수 종류: acc(누적 값), cut(현재 값), idx(현재 인덱스), src(원본 배열) 
+* ㄴ 예: const numbers = [1, 2, 3, 4, 5, 6, 7];
+const result = numbers.reduce((acc, cur)=>acc+cur);
+console.log(result); // 28 출력
+* ㄴ 예: const fluits = ["사과", "딸기", "배", "참외", "딸기", "수박"];
+const result = fluits.reduce((acc, cur)=>{
+    console.log("acc: ", acc, "cur: ", cur);
+    if (acc.includes(cur) === false) {
+        acc.push(cur);
+    }
+    return acc;
+}, []);
+console.log(result); // acc: [] cur: 사과 acc: ['사과'] cur: 딸기 ... acc: ['사과', '딸기', '배', '참외', '수박'] 출력
+
 
 
 # JavaScript 모듈 시스템
