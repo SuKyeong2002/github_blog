@@ -57,6 +57,15 @@ printThis1()' // {name: '홍길동'} 출력
 };
 let peintThis1 = printThis.bind(person2);
 printThis1()' // {name: '홍길동'} 출력
+* 예외2: 전역 스코프에서 this: window 객체
+* 예외3: 화살표 함수(ES6)에서 this
+* ㄴ 즉, 자신을 포함하고 있는 외부 Scope에서 this 계승 받음
+* ㄴ 즉, 자신을 감싼 정적 범위
+* ㄴ 주의사항1: 객체 메서드 선언 시 사용 X
+* ㄴ 주의사항2: addEventListener 함수의 콜백 함수에서 사용하면 this가 상위 컨텍스트 (window 객체) 가리킴
+* ㄴ 이전에는, that 사용
+* Strict Mode에서 this
+* ㄴ 즉, 기본값: undefined (엄격함!)
 
 
 
