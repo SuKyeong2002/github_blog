@@ -39,10 +39,24 @@
 * ㄴ 즉, javascript 파일 실행 시 HTML 파싱 중단
 
 # this란 무엇인가?
-* this: 객체 (= 호출하는 놈)
+* this: 객체 (= 호출하는 놈, 즉 대부분 함수를 호출하는 방법에 의해 결정)
 * this의 기본값: window 객체
-* 예: person.printThis; console.log("this === person", this === person); console.log("this === window", this === window); 시 true false 출력
-* 예: printThis; console.log("this === person", this === person); console.log("this === window", this === window); 시 false true 출력 
+* 예: person.printThis; console.log("this === person", this === person); console.log("this === window", this === window); // true false 출력
+* 예: printThis; console.log("this === person", this === person); console.log("this === window", this === window); // false true 출력
+* 예외1: ESS bind-this 설정 (* 한 번만 사용 가능!)
+* ㄴ 예: function printThis () {
+    console.log(this) // default this == window
+}
+let person1 = {
+    name: '홍길동',
+};
+let peintThis1 = printThis.bind(person1);
+printThis1()' // {name: '홍길동'} 출력
+let person2 = {
+    name: '김길동',
+};
+let peintThis1 = printThis.bind(person2);
+printThis1()' // {name: '홍길동'} 출력
 
 
 
