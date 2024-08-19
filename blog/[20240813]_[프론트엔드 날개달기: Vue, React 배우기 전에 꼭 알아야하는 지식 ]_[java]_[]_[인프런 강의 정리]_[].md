@@ -177,4 +177,18 @@ console.log(result); // acc: [] cur: 사과 acc: ['사과'] cur: 딸기 ... acc:
 
 
 # Webpack 기초 강좌 
+* 특정 코드 자주 사용 -> 재사용/유지보수 -> 파일을 여러 개로 분리해서 개발
+* 모듈: 분리된 파일 (예. main.js, a.js 등)
+* 개발의 편의성 -> 모듈 분리 증가 -> 브라우저에서 서버에 요청하는 개수 증가 -> 네트워크 비용 증가 -> 페이지 로딩시간 증가 -> 좋지 않은 사용자 경험
+* 해결방안: 모듈로 나누어 개발하되, 배포 전 하나의 파일로 압축 (모듈 번들러)
+* ㄴ 예: 웹팩(Webpack)
+* ㄴ export/import 활용
+* ㄴ 방법1: 
+* ㄴ npm init -y // package.json 초기화
+* ㄴ npm install --save-dev webpack webpack-cli // 로컬 환경에 웹팩 설치
+* ㄴ npx webpack --entry ./src/index.js --output-path ./dist --node development
+* ㄴ 방법2:
+* ㄴ webpack.config.js 파일 추가: 실행 시 자동 참고
+* ㄴ npx webpck 실행: dist 폴더 안 bundle.js 파일 생성
+* ㄴ 유용: package.json 안 "build": "webpack" 추가 -> npm run build -> dist 폴더 안 bundle.js 파일 생성
 
