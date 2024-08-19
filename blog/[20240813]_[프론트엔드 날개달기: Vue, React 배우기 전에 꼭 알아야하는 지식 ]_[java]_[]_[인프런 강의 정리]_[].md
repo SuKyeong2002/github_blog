@@ -67,9 +67,20 @@ printThis1()' // {name: '홍길동'} 출력
 * Strict Mode에서 this
 * ㄴ 즉, 기본값: undefined (엄격함!)
 
-
-
 # API란 무엇인가?
+* API (Application Programming Interface): 응용 프로그램에서 사용할 수 있도록 운영체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있도록 만든 인터페이스 (즉, 애플리케이션에서 데이터를 읽거나 쓰기 위해 사용하는 인터페이스)
+* Interface: 상호 간의 소통을 위한 방법
+* ㄴ 예: 사람이 저녁을 먹기 위해 스마트키(인터페이스)를 눌러 자동차 염
+* ㄴ 예: 사람이 폰에 있는 배달의 앱(인터페이스)을 통해 저녁을 먹음 
+* ㄴ 예: 앱에서 기상청에게 Request(예: http://api.data.go.kr/weather/list)하고 Response(예: {"today": "2021-04-09", "weather": "맑음"}) 받음
+* HTTP API: 인터넷상 API/ 프로토콜 = 소통방법 = 통신방법 = 통신규약
+* 날씨정보앱 (프론트엔드(클라이언트(요청자))) <-> API/DB서버 (백엔드(서버(제공자)))
+* IoT 애플리케이션: 창문 <- (창문개방 API) <- (제어) <- 미세먼지 데이터 읽는 기기 <- (값 수신) <- (미세먼지 농도전달 API) <- 미세먼지 측정 기기
+* ㄴ 위의 경우, HTTP 보다는 MQTT/CoAP API (저사양/저전력) 사용이 효과적
+* Class API: 통신 프로토콜 레벨 X 소스 코드 레벨 O
+* ㄴ 예: console API, Java API 등
+* 종류: Private API (비공개) <-> Public API (공개/ 예: 카카오, 네이버 등)
+* UI (User Interface): 사용자가 소통하기 위한 접점
 
 
 # 동기와 비동기란?
