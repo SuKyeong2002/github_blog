@@ -65,7 +65,7 @@ printThis1()' // {name: '홍길동'} 출력
 * ㄴ 주의사항2: addEventListener 함수의 콜백 함수에서 사용하면 this가 상위 컨텍스트 (window 객체) 가리킴
 * ㄴ 이전에는, that 사용
 * Strict Mode에서 this
-* ㄴ 즉, 기본값: undefined (엄격함!)
+* ㄴ 즉, 기본값: undefined (엄격함)
 
 # API란 무엇인가?
 * API (Application Programming Interface): 응용 프로그램에서 사용할 수 있도록 운영체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있도록 만든 인터페이스 (즉, 애플리케이션에서 데이터를 읽거나 쓰기 위해 사용하는 인터페이스)
