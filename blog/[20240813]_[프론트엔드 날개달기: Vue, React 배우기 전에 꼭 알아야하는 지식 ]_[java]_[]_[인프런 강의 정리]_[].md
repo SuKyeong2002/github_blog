@@ -171,6 +171,26 @@ console.log(result); // acc: [] cur: 사과 acc: ['사과'] cur: 딸기 ... acc:
 
 
 # JavaScript 모듈 시스템
+* 모듈: 분리된 파일 (예. main.js, a.js 등)
+* ㄴ 클래스 하나 또는 특정한 목적을 가진 여러 함수를 포함하는 라이브러리로 구성
+* 장점:
+* ㄴ 1. 유지보수용이: 의존성 감소 -> 기능 개선, 수정 용이
+* ㄴ 2. 네임스페이스화: 전역스코프에 존재하는 변수명 겹침 문제 해결
+* ㄴ 3. 재사용성: 같은 코드 반복 X, 재활용 가능
+* 종류: 
+* ㄴ 1. AMD: 가장 오래된 모듈 시스템 중 하나, require.js 라이브러리 처음 개발
+* ㄴ 2. CommonJS: NodeJS 환경 위해 개발
+* ㄴ 3. UMD:AMD와 CommonJS와 같은 다양한 모듈 시스템 함께 사용하기 위해 개발
+* ㄴ 4. ES Module: ES6(ES2015)에 도입
+* ES Module 방식: 
+* ㄴ <script type="module"> 속성 추가 시 해당 파일은 모듈로서 동작
+* ㄴ export/default export: 외부에서 모듈을 사용할 수 있도록 내보내기 
+* ㄴ import: 외부에서 모듈을 불러오기
+* 내보내기:
+* ㄴ 1. named export 사용하여 함수/변수 내보내기
+* ㄴ 2. default export 사용하여 하나 기본 함수 내보내기 (모듈당 하나만 가능)
+
+
 
 
 # NPM 기초 강좌
