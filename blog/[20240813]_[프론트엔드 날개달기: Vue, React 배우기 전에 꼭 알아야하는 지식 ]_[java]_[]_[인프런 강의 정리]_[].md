@@ -183,7 +183,7 @@ console.log(result); // acc: [] cur: 사과 acc: ['사과'] cur: 딸기 ... acc:
 * ㄴ 3. UMD:AMD와 CommonJS와 같은 다양한 모듈 시스템 함께 사용하기 위해 개발
 * ㄴ 4. ES Module: ES6(ES2015)에 도입
 * ES Module 방식: 
-* ㄴ <script type="module"> 속성 추가 시 해당 파일은 모듈로서 동작
+* ㄴ script type="module": 속성 추가 시 해당 파일은 모듈로서 동작
 * ㄴ export/default export: 외부에서 모듈을 사용할 수 있도록 내보내기 
 * ㄴ import: 외부에서 모듈을 불러오기
 * 내보내기:
