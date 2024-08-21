@@ -190,11 +190,58 @@ console.log(result); // acc: [] cur: 사과 acc: ['사과'] cur: 딸기 ... acc:
 * ㄴ 1. named export 사용하여 함수/변수 내보내기
 * ㄴ 2. default export 사용하여 하나 기본 함수 내보내기 (모듈당 하나만 가능)
 
-
-
-
 # NPM 기초 강좌
-
+* NPM(Node Package Manger): 모듈 저장소에서 모듈을 쉽게 다운로드 받을 수 있게 하는 것
+* ㄴ 예: npm install <모듈명>
+* npm: Node.js 설치 시 자동 설치
+* Node.js: Chrome VB JavaScript 엔진으로 빌드된 JavaScript 런타임
+* ㄴ node -v: 노드 버전 확인
+* ㄴ npm -v: npm 버전 확인
+* ㄴ npm install dayjs: const 변수명 = require('dayjs');
+* package.json (직접 작성 또는 npm init으로 자동 생성):
+* ㄴ name: 프로젝트 이름 (필수)
+* ㄴ version: 프로젝트 버전 
+* ㄴ description: 프로젝트 설명
+* ㄴ keywords: 프로젝트 검색할 때 참조되는 키워드
+* ㄴ private: true로 설정 시 npm 게시 거부
+* ㄴ main: 프로그램 기본 진입점
+* ㄴ scripts: 프로젝트에서 자주 실행하는 명령어를 scripts로 작성 시 npm 가능
+* ㄴ author: 제작자의 이름
+* ㄴ license: 패키지 사용 방법과 제한 사항 명시 
+* ㄴ * dependencies: 프로젝트 사용하는 모듈 기술
+* ㄴ * devDependencies: 개발할 때만 의존하는 모듈 관리
+* ㄴ 참고: https://www.npmjs.com/ 
+* node_modules: 설치된 모듈뿐만 아니라 의존하고 있는 모듈 전부 설치된 디렉토리
+* package-lock.json: 모듈들의 의존성 트리 기록 (node_modules 디렉토리 안에 모듈 다운)
+* npm 명령어:
+* ㄴ npm init: 새로운 프로젝트(패키지) 시작 시 사용
+* ㄴ npm init -y: -y 옵션 사용하여 기본값 자동 설정
+* ㄴ npm install <패키지명>: 패키지 설치 명령어
+* ㄴ npm install <패키지@버전>: 특정 버전 설치
+* ㄴ npm install --save(또는 -S): dependencies에 추가
+* ㄴ npm install --save-dev(또는 -D): devDepencencies에 추가
+* ㄴ npm install <패키지명1> <패키지명2>: 여러 개 패키지 설치
+* ㄴ npm install -g <패키지명>: 전역 설치 
+* ㄴ npm uninstall <패키지명>: 로컬 패키지 삭제
+* ㄴ npm uninstall -g <패키지명>: 전역 패키지 삭제
+* ㄴ npm update <패키지명>: 설치한 패키지 업데이트
+* ㄴ npm root: 로컬 패키지 설치 디렉토리 확인
+* ㄴ npm root -g: 전역 패키지 설치 디렉토리 확인
+* ㄴ npm ls: 로컬 설치된 패키지 확인
+* ㄴ npm is -g: 전역 설치된 패키지 확인
+* ㄴ npm start:m package.json 파일의 script 속성의 start 실행
+* ㄴ npm run <script-name>: package.json 파일의 script 속성의 start와 스크립트 실행
+* 버전: MAJOR, MINOR, PATCH
+* ㄴ MAJOR: 주요 변화, 기존 API와 추가/변경/삭제 등, 이전 버전과 호환이 안될 수 있음
+* ㄴ MINOR: 기능 추가, 이전 버전과 호환된
+* ㄴ PATCH: 버그 수정, 이전 버전과 호환됨
+* 틸드(~): 현재 지정한 버전의 마지막 자리 내의 범위 내에서만 자동 업데이트
+* ㄴ 0.0.1: >=0.0.1<0.1.0
+* ㄴ 0.1.1: >=0.1.1<0.2.0
+* ㄴ 0.1: >=0.1.0<0.2.0
+* ㄴ 0: >=0.0<1.0
+* 캐럿(^): Node.js 모듈이 SemVer의 규약을 따른다는 것을 신뢰한다는 가정 하에 등장
+* ㄴ MINOR, PATCH 버전은 하위호환성 보장되어야 하므로 업데이트
 
 # Webpack 기초 강좌 
 * 특정 코드 자주 사용 -> 재사용/유지보수 -> 파일을 여러 개로 분리해서 개발
